@@ -1,0 +1,137 @@
+[
+  {
+    "date": "Sa 13.06.",
+    "place": "Stavanger",
+    "name": "Comfort Hotel Square",
+    "type": "hotel",
+    "url": "https://maps.google.com/?cid=3593140390690795518",
+    "address": "Løkkeveien 41, 4008 Stavanger",
+    "note": "Wir laden euch zum Eröffnungsabend ein."
+  },
+  {
+    "date": "So 14.06.",
+    "place": "Lysebotn",
+    "name": "Kjerag Lysebotn Camping",
+    "type": "cabin",
+    "url": "https://maps.google.com/?cid=3816701135965915942",
+    "address": "Fv500 16, 4127 Lysebotn",
+    "note": "Wir kochen gemeinsam."
+  },
+  {
+    "date": "Mo 15.06.",
+    "place": "Bykle",
+    "name": "Bykle Hotell",
+    "type": "hotel",
+    "url": "https://maps.google.com/?cid=12566016764150235520",
+    "address": "Sarvsvegen 2, 4754 Bykle",
+    "note": "Abendessen auf eigene Kosten."
+  },
+  {
+    "date": "Di 16.06.",
+    "place": "Røldal",
+    "name": "Røldal Hyttegrend Camping",
+    "type": "cabin",
+    "url": "https://maps.google.com/?cid=17840229399057779746",
+    "address": "Kyrkjevegen 49, 5760 Røldal",
+    "note": "Wir kochen gemeinsam."
+  },
+  {
+    "date": "Mi 17.06.",
+    "place": "Skånevik",
+    "name": "Skånevik Fjordhotel",
+    "type": "hotel",
+    "url": "https://maps.google.com/?cid=6914617449551518108",
+    "address": "Fv34 1310, 5593 Skånevik",
+    "note": "Abendessen auf eigene Kosten."
+  },
+  {
+    "date": "Do 18.06.",
+    "place": "Kvanndal",
+    "name": "Kvanndal Camping",
+    "type": "cabin",
+    "url": "https://maps.google.com/?cid=505244226282124400",
+    "address": "Kvanndalsvegen 84, 5736 Granvin",
+    "note": "Wir kochen gemeinsam."
+  },
+  {
+    "date": "Fr 19.06.",
+    "place": "Vikøyri",
+    "name": "Blix Hotell",
+    "type": "hotel",
+    "url": "https://maps.google.com/?cid=17219912950949580023",
+    "address": "Sentrumsgata 44, 6893 Vikøyri",
+    "note": "Abendessen auf eigene Kosten."
+  },
+  {
+    "date": "Sa 20.06.",
+    "place": "Vassenden",
+    "name": "Jølvassbu Camping",
+    "type": "cabin",
+    "url": "https://maps.google.com/?cid=61892768192688556",
+    "address": "Fv451 22, 6847 Vassenden",
+    "note": "Wir kochen gemeinsam."
+  },
+  {
+    "date": "So 21.06.",
+    "place": "Loen",
+    "name": "Tjugen Camping",
+    "type": "cabin",
+    "url": "https://maps.google.com/?cid=8654825020474472642",
+    "address": "Lodalsvegen 198, 6789 Loen",
+    "note": "Wir kochen gemeinsam."
+  },
+  {
+    "date": "Mo 22.06.",
+    "place": "Loen",
+    "name": "Tjugen Camping",
+    "type": "cabin",
+    "url": "https://maps.google.com/?cid=8654825020474472642",
+    "address": "Lodalsvegen 198, 6789 Loen",
+    "note": "Ruhetag. Abendessen auf eigene Kosten."
+  },
+  {
+    "date": "Di 23.06.",
+    "place": "Eidsdal",
+    "name": "Solvang Camping",
+    "type": "cabin",
+    "url": "https://maps.google.com/?cid=5361139014680947550",
+    "address": "Rv63 10, 6215 Eidsdal",
+    "note": "Wir kochen gemeinsam."
+  },
+  {
+    "date": "Mi 24.06.",
+    "place": "Isfjorden",
+    "name": "Gjerdset Turistsenter",
+    "type": "cabin",
+    "url": "https://maps.google.com/?cid=12695434476491392916",
+    "address": "Nordsidevegen 1970, 6320 Isfjorden",
+    "note": "Wir kochen gemeinsam."
+  },
+  {
+    "date": "Do 25.06.",
+    "place": "Kristiansund",
+    "name": "Scandic Kristiansund",
+    "type": "hotel",
+    "url": "https://maps.google.com/?cid=17235270608192961489",
+    "address": "Storgata 41, 6508 Kristiansund",
+    "note": "Abendessen auf eigene Kosten."
+  },
+  {
+    "date": "Fr 26.06.",
+    "place": "Kyrksæterøra",
+    "name": "Hotell Koselig Kyrksæterøra",
+    "type": "hotel",
+    "url": "https://maps.google.com/?cid=13003531326648327181",
+    "address": "Prinsengata 6, 7200 Kyrksæterøra",
+    "note": "Abendessen auf eigene Kosten."
+  },
+  {
+    "date": "Sa 27.06.",
+    "place": "Trondheim",
+    "name": "Comfort Hotel Park",
+    "type": "hotel",
+    "url": "https://maps.google.com/?cid=2702034332095861222",
+    "address": "Prinsens gt. 4A, 7012 Trondheim",
+    "note": "Wir laden euch zum Abschlussabend ein."
+  }
+]

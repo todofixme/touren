@@ -1,0 +1,220 @@
+[
+  {
+    "kind": "ferry",
+    "tracks": [
+      "short"
+    ],
+    "date": "So 14.06.",
+    "times": [
+      "13:00",
+      "13:55",
+      "16:55"
+    ],
+    "route": "Lauvvik → Lysebotn",
+    "duration": "1:15 h bzw. 2:40 h",
+    "schedule": [
+      "https://billetter.kolumbus.no/en"
+    ]
+  },
+  {
+    "kind": "ferry",
+    "tracks": [
+      "long"
+    ],
+    "date": "So 14.06.",
+    "times": [
+      "alle 30"
+    ],
+    "route": "Lauvvik → Oanes",
+    "duration": "10 min",
+    "schedule": [
+      "https://www.hogsfjordferja.no/en/schedule-prices/"
+    ]
+  },
+  {
+    "kind": "ferry",
+    "tracks": [
+      "long"
+    ],
+    "date": "So 14.06.",
+    "times": [
+      "17:30"
+    ],
+    "route": "Songesand → Lysebotn",
+    "duration": "40 min",
+    "schedule": [
+      "https://billetter.kolumbus.no/en"
+    ]
+  },
+  {
+    "kind": "ferry",
+    "tracks": [
+      "short",
+      "long"
+    ],
+    "date": "Do 18.06.",
+    "times": [
+      "08:45",
+      "12:45"
+    ],
+    "route": "Skånevik → Matre",
+    "duration": "50 min",
+    "schedule": [
+      "https://www.skyss.no/globalassets/reise/rutetabellar/bat-og-ferje/b%C3%A5t-og-ferje/1031.pdf"
+    ]
+  },
+  {
+    "kind": "ferry",
+    "tracks": [
+      "short",
+      "long"
+    ],
+    "date": "Do 18.06.",
+    "times": [
+      "10:30",
+      "11:30",
+      "12:10",
+      "12:30",
+      "13:30"
+    ],
+    "route": "Årsnes → Gjermundshamn",
+    "duration": "20 min",
+    "schedule": [
+      "https://www.skyss.no/globalassets/reise/rutetabellar/bat-og-ferje/b%C3%A5t-og-ferje/1027.pdf"
+    ]
+  },
+  {
+    "kind": "ferry",
+    "tracks": [
+      "short",
+      "long"
+    ],
+    "date": "Sa 20.06.",
+    "times": [
+      "09:15",
+      "09:45",
+      "10:15",
+      "10:45",
+      "…"
+    ],
+    "route": "Vangsnes → Dragsvik",
+    "duration": "35 min",
+    "schedule": [
+      "https://www.fergeruter.info/fahrplan/vangsnes-dragsvik?id=49&d=2026-06-20&h=8&m=30"
+    ]
+  },
+  {
+    "kind": "ferry",
+    "tracks": [
+      "long"
+    ],
+    "date": "So 21.06.",
+    "times": [
+      "alle 20 min"
+    ],
+    "route": "Anda → Lote",
+    "duration": "10 min",
+    "schedule": [
+      "https://www.skyss.no/globalassets/reise/rutetabellar/bat-og-ferje/b%C3%A5t-og-ferje/1044.pdf"
+    ]
+  },
+  {
+    "kind": "ferry",
+    "tracks": [
+      "short",
+      "long"
+    ],
+    "date": "Di 23.06.",
+    "times": [
+      "11:00",
+      "11:30",
+      "12:30",
+      "13:00",
+      "14:00",
+      "14:30",
+      "16:00"
+    ],
+    "route": "Hellesylt → Geiranger",
+    "duration": "1 h 05 min",
+    "schedule": [
+      "https://reise.frammr.no/assistant?filter=bus%2Cexpressboat%2Cferry%2Cairportbus%2Cother&searchMode=departBy&searchTime=1782205200000&fromId=NSR%3AStopPlace%3A59931&fromName=Hellesylt+ferjekai&fromLon=6.870108&fromLat=62.087378&fromLayer=venue&toId=NSR%3AStopPlace%3A39824&toName=Geiranger+ferjekai&toLon=7.20273&toLat=62.1036",
+      "https://www.fjordtours.com/de/norwegen/transport/autofahre/geiranger-hellesylt",
+      "https://booking.fjord1.lighthousecloud.app/en/"
+    ]
+  },
+  {
+    "kind": "ferry",
+    "tracks": [
+      "short",
+      "long"
+    ],
+    "date": "Mi 24.06.",
+    "times": [
+      "08:00",
+      "08:30",
+      "09:00",
+      "09:20",
+      "09:40",
+      "10:00"
+    ],
+    "route": "Eidsdal → Linge",
+    "duration": "13 min",
+    "schedule": [
+      "https://www.fjord1.no/eng/routes-and-timetables/moere-og-romsdal/eidsdal-linge?date=24.06.2026"
+    ]
+  },
+  {
+    "kind": "ferry",
+    "tracks": [
+      "short",
+      "long"
+    ],
+    "date": "Do 25.06.",
+    "times": [
+      "alle 20 min"
+    ],
+    "route": "Åfarnes → Sølsnes",
+    "duration": "15 min",
+    "schedule": [
+      "https://www.fjord1.no/eng/routes-and-timetables/moere-og-romsdal/aafarnes-soelsnes?date=25.06.2026&from=150015398521&to=150015028520"
+    ]
+  },
+  {
+    "kind": "bus",
+    "tracks": [
+      "short",
+      "long"
+    ],
+    "date": "Do 25.06.",
+    "times": [
+      "15:21",
+      "16:16",
+      "16:53",
+      "17:46",
+      "18:56",
+      "19:38",
+      "21:53"
+    ],
+    "route": "Bus durch Atlanterhavstunnelen",
+    "duration": "9 min",
+    "schedule": [
+      "https://reise.frammr.no/assistant?filter=bus%2Cexpressboat%2Cferry%2Cairportbus%2Cother&searchMode=departBy&searchTime=1782392400000&fromId=NSR%3AStopPlace%3A59383&fromName=Atlanterhavstunnelen&fromLon=7.62768&fromLat=63.102434&fromLayer=venue&toId=NSR%3AStopPlace%3A40015&toName=Kongens+plass&toLon=7.728777&toLat=63.11053"
+    ]
+  },
+  {
+    "kind": "ferry",
+    "tracks": [
+      "short",
+      "long"
+    ],
+    "date": "Fr 26.06.",
+    "times": [
+      "alle 30 min"
+    ],
+    "route": "Seivika → Tømmervåg",
+    "duration": "25 min",
+    "schedule": [
+      "https://www.fjord1.no/eng/routes-and-timetables/Moere-og-Romsdal/seivika-toemmervaag?date=26.06.2026"
+    ]
+  }
+]

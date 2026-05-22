@@ -1,0 +1,56 @@
+[
+  {
+    "kind": "download",
+    "format": "GPX",
+    "variant": "Standard",
+    "label": "GPX",
+    "description": "Alle Tracks als GPX in einem Download. Enthält Buffet und Unterkunft als Wegpunkte.",
+    "url": "/norwegen/tracks/norwegen_gpx.zip",
+    "verb": "ZIP laden"
+  },
+  {
+    "kind": "download",
+    "format": "GPX",
+    "variant": "Plus",
+    "label": "GPX plus",
+    "description": "Alle Tracks als GPX in einem Download. Enthält Buffet und Unterkunft als Wegpunkte sowie zusätzliche Punkte wie z. B. Fähren.",
+    "url": "/norwegen/tracks/norwegen_gpx_plus.zip",
+    "verb": "ZIP laden"
+  },
+  {
+    "kind": "download",
+    "format": "TCX",
+    "variant": "Standard",
+    "label": "TCX",
+    "description": "Alle Tracks als TCX in einem Download. Perfekt für Garmin-Geräte. Enthält Buffet und Unterkunft als Wegpunkte.",
+    "url": "/norwegen/tracks/norwegen_tcx.zip",
+    "verb": "ZIP laden"
+  },
+  {
+    "kind": "download",
+    "format": "TCX",
+    "variant": "Plus",
+    "label": "TCX plus",
+    "description": "Alle Tracks als TCX in einem Download. Perfekt für Garmin-Geräte. Enthält Buffet und Unterkunft als Wegpunkte sowie zusätzliche Punkte wie z. B. Fähren.",
+    "url": "/norwegen/tracks/norwegen_tcx_plus.zip",
+    "verb": "ZIP laden"
+  },
+  {
+    "kind": "online",
+    "format": null,
+    "variant": null,
+    "label": "Komoot-Collection",
+    "description": "Alle Strecken auf Komoot. Ideal für die Navigation mit der Komoot-App.",
+    "url": "https://www.komoot.com/de-de/collection/4360546/-wff-europaradtour-norwegen-2026",
+    "verb": "Zur Collection"
+  },
+  {
+    "kind": "online",
+    "format": null,
+    "variant": null,
+    "label": "Google MyMaps",
+    "description": "Gesamtroute auf einer Karte – perfekt für die Übersicht.",
+    "url": "https://www.google.com/maps/d/u/0/edit?mid=1nP4WTVBQyTcDZO363uIKecOxuUUcV1M&usp=sharing",
+    "verb": "Karte öffnen"
+  }
+]

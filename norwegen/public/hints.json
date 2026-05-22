@@ -1,0 +1,44 @@
+[
+  {
+    "n": "01",
+    "title": "Verantwortung\n& Respekt",
+    "short": "Damit ihr gut ankommt.",
+    "body": "Jeder Teilnehmer f\u00e4hrt auf eigene Gefahr und ist f\u00fcr seine Sicherheit verantwortlich. Bitte haltet euch an die geltenden Stra\u00dfenverkehrsregeln und begegnet allen anderen Verkehrsteilnehmern – insbesondere Fu\u00dfg\u00e4ngern – mit R\u00fccksicht und Respekt.",
+    "tone": "rasp"
+  },
+  {
+    "n": "02",
+    "title": "Niemals\nallein.",
+    "short": "Mindestens zu zweit.",
+    "body": "Bitte fahrt nie allein \u2013 sucht euch nette Mitfahrer. In der Gruppe werdet ihr besser gesehen und falls etwas passiert, ist Hilfe direkt vor Ort.",
+    "tone": "ocean"
+  },
+  {
+    "n": "03",
+    "title": "Pannen-\nKit dabei.",
+    "short": "Schlauch \u00b7 Pumpe \u00b7 Multi-Tool.",
+    "body": "Ersatzschlauch, Flickzeug, Luftpumpe und ein Multi-Tool gehören in jede Satteltasche. Pannen passieren – gut, wenn man sie schnell beheben kann.",
+    "tone": "paper"
+  },
+  {
+    "n": "04",
+    "title": "Vorr\u00e4te &\nBargeld.",
+    "short": "Essen \u00b7 Trinken \u00b7 ein paar Kronen.",
+    "body": "Norwegen ist d\u00fcnn besiedelt – zwischen zwei M\u00f6glichkeiten zur Verpflegung k\u00f6nnen schnell mehr als 40 km liegen. Nehmt genug Wasser und Riegel mit. Ein wenig Bargeld in NOK ist n\u00fctzlich, falls die Karte am Kiosk oder an einer kleinen F\u00e4hre streikt.",
+    "tone": "aqua"
+  },
+{
+    "n": "05",
+    "title": "Wetter &\nKleidung.",
+    "short": "Schichten · Wind · Regen.",
+    "body": "Das Wetter kann innerhalb weniger Stunden umschlagen – besonders an den Fjorden und in den Bergen. Packt im Tagesgepäck immer eine winddichte Regenjacke, Armlinge und etwas Warmes für lange Abfahrten ein. Im Zweifel lieber eine Schicht mehr.",
+    "tone": "mist"
+  },
+  {
+    "n": "06",
+    "title": "Licht dabei.\nImmer.",
+    "short": "Vorne und hinten.",
+    "body": "Auf der Strecke geht es durch viele Tunnel \u2013 manche kilometerlang, einige schwach beleuchtet. Front- und R\u00fccklicht geh\u00f6ren vor jedem Tunnel an und bleiben drinnen unbedingt eingeschaltet. Ladet die Akkus am Abend.",
+    "tone": "night"
+  }
+]

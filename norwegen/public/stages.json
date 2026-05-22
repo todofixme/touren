@@ -1,0 +1,142 @@
+[
+  {
+    "n": "01",
+    "date": "So 14.06.",
+    "from": "Stavanger",
+    "to": "Lysebotn",
+    "highlight": "Lysefjord, Preikestolen",
+    "short_track": "40 km / 300 Hm",
+    "long_track": "125 km / 1.700 Hm",
+    "ferry": true
+  },
+  {
+    "n": "02",
+    "date": "Mo 15.06.",
+    "from": "Lysebotn",
+    "to": "Bykle",
+    "highlight": "27 Haarnadelkurven des Lysevegen",
+    "short_track": "118 km / 2.500 Hm",
+    "long_track": null,
+    "ferry": false
+  },
+  {
+    "n": "03",
+    "date": "Di 16.06.",
+    "from": "Bykle",
+    "to": "Røldal",
+    "highlight": "Stabkirche Røldal",
+    "short_track": "114 km / 1.350 Hm",
+    "long_track": null,
+    "ferry": false
+  },
+  {
+    "n": "04",
+    "date": "Mi 17.06.",
+    "from": "Røldal",
+    "to": "Skånevik",
+    "highlight": "Røldalsfjellet",
+    "short_track": "83 km / 1.750 Hm",
+    "long_track": "154 km / 2.750 Hm",
+    "ferry": false
+  },
+  {
+    "n": "05",
+    "date": "Do 18.06.",
+    "from": "Skånevik",
+    "to": "Kvanndal",
+    "highlight": "Hardangerfjord, Folgefonna Gletscher",
+    "short_track": "136 km / 2.300 Hm",
+    "long_track": "173 km / 3.250 Hm",
+    "ferry": true
+  },
+  {
+    "n": "06",
+    "date": "Fr 19.06.",
+    "from": "Kvanndal",
+    "to": "Vikøyri",
+    "highlight": "Stalheimskleiva",
+    "short_track": "109 km / 2.100 Hm",
+    "long_track": "136 km / 2.750 Hm",
+    "ferry": false
+  },
+  {
+    "n": "07",
+    "date": "Sa 20.06.",
+    "from": "Vikøyri",
+    "to": "Vassenden",
+    "highlight": "Sognefjord, Gaularfjellet",
+    "short_track": "109 km / 2.050 Hm",
+    "long_track": "144 km / 2.150 Hm",
+    "ferry": true
+  },
+  {
+    "n": "08",
+    "date": "So 21.06.",
+    "from": "Vassenden",
+    "to": "Loen",
+    "highlight": "Innvikfjord",
+    "short_track": "93 km / 1.100 Hm",
+    "long_track": "134 km / 1.800 Hm",
+    "ferry": false
+  },
+  {
+    "n": "R",
+    "date": "Mo 22.06.",
+    "from": "Loen",
+    "to": "Loen",
+    "highlight": "Ruhetag – Hoven-Seilbahn, Klettersteig",
+    "short_track": null,
+    "long_track": "130 km / 2.150 Hm",
+    "ferry": true
+  },
+  {
+    "n": "09",
+    "date": "Di 23.06.",
+    "from": "Loen",
+    "to": "Eidsdal",
+    "highlight": "Geirangerfjord, Dalsnibba",
+    "short_track": "101 km / 1.450 Hm",
+    "long_track": "143 km / 3.000 Hm",
+    "ferry": true
+  },
+  {
+    "n": "10",
+    "date": "Mi 24.06.",
+    "from": "Eidsdal",
+    "to": "Isfjorden",
+    "highlight": "Trollstigen, Trollwand, Romsdalshorn",
+    "short_track": "109 km / 1.400 Hm",
+    "long_track": "111 km / 1.950 Hm",
+    "ferry": true
+  },
+  {
+    "n": "11",
+    "date": "Do 25.06.",
+    "from": "Isfjorden",
+    "to": "Kristiansund",
+    "highlight": "Atlantikstraße",
+    "short_track": "157 km / 1.200 Hm",
+    "long_track": "176 km / 1.300 Hm",
+    "ferry": true
+  },
+  {
+    "n": "12",
+    "date": "Fr 26.06.",
+    "from": "Kristiansund",
+    "to": "Kyrksæterøra",
+    "highlight": "Halsafjord",
+    "short_track": "105 km / 1.450 Hm",
+    "long_track": "144 km / 1.850 Hm",
+    "ferry": true
+  },
+  {
+    "n": "13",
+    "date": "Sa 27.06.",
+    "from": "Kyrksæterøra",
+    "to": "Trondheim",
+    "highlight": "Nidarosdom",
+    "short_track": "104 km / 1.350 Hm",
+    "long_track": "128 km / 1.700 Hm",
+    "ferry": false
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "name": "Norwegen 2026",
+  "subtitle": "Trolle, Tunnel, Traumstraßen",
+  "dateRange": "14. – 27. Juni 2026",
+  "startEnd": "Stavanger → Trondheim",
+  "totalKm": 1400,
+  "totalHm": 20000,
+  "ferries": 8,
+  "rideDays": 13,
+  "restDays": 1,
+  "participants": 21,
+  "links": {
+    "roadbook": "https://touren.tigerflanke.de/norwegen/roadbook/ERT_Norwegen_2026.pdf",
+    "myMaps": "https://www.google.com/maps/d/u/0/edit?mid=1nP4WTVBQyTcDZO363uIKecOxuUUcV1M&usp=sharing",
+    "komoot": "https://www.komoot.com/de-de/collection/4360546/-wff-europaradtour-norwegen-2026",
+    "ausschreibung": "https://www.europaradtour.de/ausschreibung/norwegen-2026/"
+  }
+}

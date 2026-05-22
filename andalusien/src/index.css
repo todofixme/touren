@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 4%;
+    --foreground: 240 20% 96%;
+    --card: 240 12% 7%;
+    --card-foreground: 240 15% 92%;
+    --popover: 240 12% 7%;
+    --popover-foreground: 240 15% 92%;
+    --primary: 240 10% 4%;
+    --primary-foreground: 240 20% 96%;
+    --secondary: 240 15% 12%;
+    --secondary-foreground: 240 15% 90%;
+    --muted: 240 10% 18%;
+    --muted-foreground: 240 8% 60%;
+    --accent: 18 83% 51%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 4 72% 47%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 240 12% 20%;
+    --input: 240 10% 18%;
+    --ring: 18 83% 51%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3 {
+    @apply font-heading tracking-wide;
+  }
+
+  ::selection {
+    background-color: rgba(232, 84, 26, 0.35);
+    color: #FFFFFF;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0A0A0F;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #E8541A;
+    border-radius: 3px;
+  }
+}
+
+@layer components {
+  .accent-line {
+    @apply h-px w-16 bg-accent inline-block;
+    box-shadow: 0 0 8px rgba(232, 84, 26, 0.8);
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 ease-out;
+  }
+  .card-hover:hover {
+    @apply -translate-y-1 shadow-card-hover;
+    border-color: rgba(232, 84, 26, 0.4);
+  }
+
+  .noise-overlay::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+
+  .link-accent {
+    @apply relative text-muted-foreground transition-colors duration-200 hover:text-accent;
+  }
+  .link-accent::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-px bg-accent transition-all duration-300;
+  }
+  .link-accent:hover::after {
+    @apply w-full;
+  }
+}
+
+/* GPX2GM dark theme — profile background */
+.JBprofildiv,
+#map_hp {
+  background-color: #13131F;
+}
+
+/* Info window (popup on map) stays light — library uses white bg */
+.JBinfofenster {
+  background-color: #1C1C28 !important;
+  border-color: #2E2E40 !important;
+  color: #E8E8F0 !important;
+}
+
+/* Track-layer list (checkbox dropdown) */
+.JBcheckbox li {
+  background-color: #1C1C28 !important;
+  color: #E8E8F0 !important;
+}
+.JBcheckbox li input:hover ~ label,
+.JBcheckbox li label:hover,
+.JBcheckbox li button:hover {
+  background-color: #2A2A3A !important;
+}
