@@ -96,24 +96,27 @@ export default function HomePage() {
           </div>
           <Link className="btn btn-dark" to="/tracks">Strecken zum Download →</Link>
         </div>
-        <div role="list">
-          {stages.map((s) => (
-            <div key={`${s.n}-${s.date}`}
-                 className={`stage-row${s.n === 'R' ? ' rest' : ''}${s.ferry ? ' has-ferry' : ''}`}
-                 role="listitem">
-              <span className="sn">{s.n}</span>
-              <span className="sd">{s.date}</span>
-              <span className="sr">
-                {s.from}
-                {s.from !== s.to && <> <small>→</small> {s.to}</>}
-              </span>
-              <span className="sh">{s.highlight}</span>
-              <span className="skm">{s.n === 'R' ? '–' : nbspUnits(s.short_track)}</span>
-              <span className="shm">{nbspUnits(s.long_track) || ''}</span>
-              <span className="ferry-dot" />
-            </div>
-          ))}
-        </div>
+        <table className="tracks-table">
+          <thead>
+            <tr>
+              <th>Etappe</th><th>Datum</th><th>Von → Nach</th>
+              <th>Highlight</th><th>Kurz</th><th>Lang</th><th>Fähre</th>
+            </tr>
+          </thead>
+          <tbody>
+            {stages.map((s) => (
+              <tr key={`${s.n}-${s.date}`} className={s.n === 'R' ? 'rest' : ''}>
+                <td><span className="n-cell">{s.n}</span></td>
+                <td className="date-cell">{s.date}</td>
+                <td>{s.from}{s.from !== s.to && <> → <b>{s.to}</b></>}</td>
+                <td>{s.highlight}</td>
+                <td className="km-cell">{s.n === 'R' ? '–' : s.short_track}</td>
+                <td className="hm-cell">{s.long_track || '–'}</td>
+                <td>{s.ferry && <span className="ferry-chip">Fähre</span>}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
         <div className="stages-legend">
           <span><i /> Etappe mit Fähre</span>
           <span><i className="rest-i" /> Ruhetag in Loen</span>

@@ -358,6 +358,13 @@ a { color: inherit; }
   .transit-row .t-times { grid-column: 3 / 5; grid-row: 2; }
   .transit-row .t-links { grid-column: 4; grid-row: 1; }
 }
+@media (max-width: 960px) {
+  /* hide Highlight column */
+  .tracks-table th:nth-child(4),
+  .tracks-table td:nth-child(4) { display: none; }
+  /* ferry: dot only, no label */
+  .tracks-table .ferry-chip { font-size: 0; gap: 0; }
+}
 @media (max-width: 720px) {
   .site-header { padding: 14px 20px; gap: 12px; }
   .site-logo img { height: 36px; }
@@ -379,4 +386,9 @@ a { color: inherit; }
   .transit-row .t-dur { display: none; }
   .transit-row .t-times { grid-column: 2 / 5; grid-row: 3; }
   .transit-row .t-links { grid-column: 4; grid-row: 1; justify-self: end; }
+  /* hide Lang and Fähre columns */
+  .tracks-table th:nth-child(6),
+  .tracks-table td:nth-child(6),
+  .tracks-table th:nth-child(7),
+  .tracks-table td:nth-child(7) { display: none; }
 }
