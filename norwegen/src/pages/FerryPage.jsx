@@ -24,7 +24,7 @@ function TransitRow({ t }) {
         ))}
       </div>
       <div className="t-route">{t.route}</div>
-      <div className="t-dur">{t.duration || '–'}</div>
+      <div className="t-dur"><nobr>Fahrzeit: {t.duration || '–'}</nobr> </div>
       <div className="t-links">
         {schedules.map((url, i) => (
           <a key={url} href={url} target="_blank" rel="noopener noreferrer">
