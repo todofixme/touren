@@ -148,18 +148,16 @@ a { color: inherit; }
 .tracks-hero h1 { color: #fff; }
 .tracks-hero .eyebrow { color: var(--accent); }
 .tracks-hero p { color: rgba(255,255,255,0.78); max-width: 560px; font-size: 18px; }
-.tracks-sources { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; padding: 0 48px; max-width: 1280px; margin: -32px auto 0; position: relative; z-index: 2; }
+.tracks-sources { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; padding: 0 48px; max-width: 1280px; margin: -32px auto 0; position: relative; z-index: 2; }
 .ts-card { background: #fff; border-radius: 18px; padding: 28px 26px 24px; box-shadow: var(--sh-2); display: flex; flex-direction: column; gap: 12px; min-height: 220px; text-decoration: none; color: inherit; transition: transform .2s, box-shadow .2s; }
 .ts-card:hover { transform: translateY(-3px); box-shadow: var(--sh-3); }
 .ts-card h3 { font-family: var(--font-display); text-transform: uppercase; font-size: 30px; line-height: 0.98; margin: 0; }
-.ts-card p { margin: 0; font-size: 14px; line-height: 1.55; color: var(--fg-2); flex: 1; }
+.ts-card p { margin: 0; font-size: 14px; line-height: 1.55; color: var(--fg-2); flex: 1; white-space: pre-line; }
 .ts-card .ts-foot { display: flex; align-items: center; justify-content: space-between; margin-top: 8px; gap: 8px; }
 .ts-card .ts-num { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.22em; color: var(--c-slate); font-weight: 700; text-transform: uppercase; display: inline-flex; align-items: center; gap: 8px; }
 .ts-card .ts-verb { font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--c-ocean-blue); white-space: nowrap; }
 .ts-card .ts-ext  { font-size: 16px; color: var(--c-slate); line-height: 1; }
 .ts-card .ts-fmt { color: var(--c-ocean-blue); font-weight: 800; letter-spacing: 0.18em; }
-.ts-card .ts-plus { display: inline-block; background: var(--c-sunburst-yellow); color: var(--c-night); padding: 2px 8px 1px; border-radius: 999px; font-family: var(--font-body); font-size: 10px; letter-spacing: 0.16em; line-height: 1.4; text-transform: uppercase; }
-.ts-card.is-download.is-plus { background: #FFFCEB; }
 .howto { padding: 120px 48px 80px; max-width: 1280px; margin: 0 auto; }
 .howto-layout { display: grid; grid-template-columns: 1fr 260px; grid-template-rows: auto auto; column-gap: 56px; align-items: start; margin-top: 8px; }
 .howto-intro-text { grid-column: 1; grid-row: 1; }

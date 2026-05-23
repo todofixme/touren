@@ -26,9 +26,8 @@ export default function TracksPage() {
                href={src.url} target="_blank" rel="noopener noreferrer">
               <div className="ts-num">
                 {isDownload
-                  ? <>Download · <span className="ts-fmt">{src.format}</span>
-                      {isPlus && <span className="ts-plus">Plus</span>}</>
-                  : <>Online-Quelle</>}
+                  ? <>Download · <span className="ts-fmt">{src.format}</span></>
+                  : <>Externe Seite</>}
               </div>
               <h3>{src.label}</h3>
               <p>{src.description}</p>
@@ -49,10 +48,9 @@ export default function TracksPage() {
 
         <div className="howto-layout">
           <div className="howto-intro-text">
-            <p>Im Folgenden findest du die Tracks unserer Tour zum Download. Die Tracks enthalten
-               Unterkünfte und das Buffet als Wegpunkte; die Plus-Variante enthält zusätzlich Infos
-               wie Cafés und Highlights der Strecke.</p>
-            <p>Weiterhin kannst du zwischen GPX- und TCX-Dateien wählen. TCX eignet sich besonders
+            <p>Hier findest du die Tracks unserer Tour zum Download. Inklusive Wegpunkte für 
+                Buffets, Fähren, Unterkünfte, Cafés und weitere Highlights der Strecke.</p>
+            <p>Du kannst zwischen GPX- und TCX-Dateien wählen. TCX eignet sich besonders
                für Garmin-Geräte. So werden dir zum Beispiel die Wegpunkte in der
                Streckenpunkteliste angezeigt (siehe Screenshot).</p>
           </div>
