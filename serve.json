@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/andalusien/**", "destination": "/andalusien/index.html" },
+    { "source": "/norwegen/**",   "destination": "/norwegen/index.html"   }
+  ]
+}

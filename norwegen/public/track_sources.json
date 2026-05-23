@@ -5,7 +5,7 @@
     "variant": "Standard",
     "label": "GPX",
     "description": "Alle Tracks als GPX in einem Download. Enthält Buffet und Unterkunft als Wegpunkte.",
-    "url": "/norwegen/tracks/norwegen_gpx.zip",
+    "url": "/norwegen/downloads/norwegen_gpx.zip",
     "verb": "ZIP laden"
   },
   {
@@ -14,7 +14,7 @@
     "variant": "Plus",
     "label": "GPX plus",
     "description": "Alle Tracks als GPX in einem Download. Enthält Buffet und Unterkunft als Wegpunkte sowie zusätzliche Punkte wie z. B. Fähren.",
-    "url": "/norwegen/tracks/norwegen_gpx_plus.zip",
+    "url": "/norwegen/downloads/norwegen_gpx_plus.zip",
     "verb": "ZIP laden"
   },
   {
@@ -23,7 +23,7 @@
     "variant": "Standard",
     "label": "TCX",
     "description": "Alle Tracks als TCX in einem Download. Perfekt für Garmin-Geräte. Enthält Buffet und Unterkunft als Wegpunkte.",
-    "url": "/norwegen/tracks/norwegen_tcx.zip",
+    "url": "/norwegen/downloads/norwegen_tcx.zip",
     "verb": "ZIP laden"
   },
   {
@@ -32,7 +32,7 @@
     "variant": "Plus",
     "label": "TCX plus",
     "description": "Alle Tracks als TCX in einem Download. Perfekt für Garmin-Geräte. Enthält Buffet und Unterkunft als Wegpunkte sowie zusätzliche Punkte wie z. B. Fähren.",
-    "url": "/norwegen/tracks/norwegen_tcx_plus.zip",
+    "url": "/norwegen/downloads/norwegen_tcx_plus.zip",
     "verb": "ZIP laden"
   },
   {

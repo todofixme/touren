@@ -250,7 +250,7 @@ a { color: inherit; }
 .transit-row:hover { box-shadow: var(--sh-2); }
 .transit-row .t-kind { width: 36px; height: 36px; border-radius: 999px; display: inline-flex; align-items: center; justify-content: center; grid-column: 1; grid-row: 1 / 3; align-self: center; }
 .transit-row.ferry .t-kind { background: var(--c-ocean-blue); color: #fff; }
-.transit-row.bus   .t-kind { background: var(--c-aqua-teal); color: var(--c-night); }
+.transit-row.bus   .t-kind { background: var(--c-sunburst-yellow); color: var(--c-night); }
 .transit-row .t-date   { grid-column: 2; grid-row: 1; font-family: var(--font-mono); font-size: 13px; color: var(--c-slate); }
 .transit-row .t-tracks { grid-column: 3; grid-row: 1; display: flex; flex-wrap: nowrap; gap: 4px; }
 .transit-row .t-route  { grid-column: 4; grid-row: 1; font-size: 17px; font-weight: 600; color: var(--c-ink); }
@@ -259,7 +259,7 @@ a { color: inherit; }
 .transit-row .t-times  { grid-column: 2 / 7; grid-row: 2; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
 .transit-row .t-time-chip { display: inline-flex; align-items: center; padding: 4px 10px; border-radius: 999px; font-family: var(--font-mono); font-size: 13px; font-variant-numeric: tabular-nums; background: var(--c-paper); color: var(--c-ink); font-weight: 600; }
 .transit-row.ferry .t-time-chip { background: rgba(0,105,138,0.10); color: var(--c-ocean-blue); }
-.transit-row.bus   .t-time-chip { background: rgba(100,194,200,0.20); color: var(--c-night); }
+.transit-row.bus   .t-time-chip { background: rgba(0,105,138,0.10); color: var(--c-ocean-blue); }
 .transit-row .t-links a { text-decoration: none; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--c-ocean-blue); padding: 6px 12px; border-radius: 999px; border: 1.5px solid var(--c-ocean-blue); transition: all .15s; white-space: nowrap; display: inline-block; }
 .transit-row .t-links a:hover { background: var(--c-ocean-blue); color: #fff; }
 .track-chip { display: inline-flex; align-items: center; padding: 3px 9px; border-radius: 999px; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }

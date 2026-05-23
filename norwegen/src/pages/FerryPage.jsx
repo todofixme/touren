@@ -1,21 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { useData } from '../DataContext';
-
-const FerryIcon = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-    <path d="M2 20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1" />
-    <path d="M3 16l9-9 9 9" />
-    <path d="M12 7V3" />
-  </svg>
-);
-
-const BusIcon = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-    <rect x="4" y="3" width="16" height="14" rx="2" />
-    <path d="M4 11h16" /><path d="M8 21v-2" /><path d="M16 21v-2" />
-    <circle cx="8" cy="15" r="1" /><circle cx="16" cy="15" r="1" />
-  </svg>
-);
+import { Ship, BusFront } from "lucide-react";
 
 function TransitRow({ t }) {
   const schedules = Array.isArray(t.schedule) ? t.schedule : t.schedule ? [t.schedule] : [];
@@ -23,7 +8,7 @@ function TransitRow({ t }) {
   return (
     <div className={`transit-row ${t.kind}`}>
       <div className="t-kind" title={t.kind === 'ferry' ? 'Fähre' : 'Bus'}>
-        {t.kind === 'ferry' ? <FerryIcon /> : <BusIcon />}
+        {t.kind === 'ferry' ? <Ship /> : <BusFront />}
       </div>
       <div className="t-date">{t.date}</div>
       <div className="t-tracks">

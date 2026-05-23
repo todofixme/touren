@@ -34,7 +34,7 @@ function Header() {
   return (
     <header className={`site-header${open ? ' menu-open' : ''}`}>
       <Link className="site-logo" to="/">
-        <img src="assets/logo-color.png" alt="WfF EuropaRadtour" />
+        <img src={`${import.meta.env.BASE_URL}assets/logo-color.png`} alt="WfF EuropaRadtour" />
         <span className="crumb">
           <b>ERT NORWEGEN 2026</b><br />Tour-Infos
         </span>
@@ -101,7 +101,7 @@ function Footer() {
     <footer className="site-footer">
       <div className="footer-inner">
         <div className="footer-brand">
-          <img src="assets/logo-white.png" alt="WfF EuropaRadtour" />
+          <img src={`${import.meta.env.BASE_URL}assets/logo-white.png`} alt="WfF EuropaRadtour" />
           <p>ERT Norwegen 2026 – Tour-Infos mit Roadbook, Tracks, Unterkünften und Fähren.
              Eine Produktion des WfF Berlin-Brandenburg e.V.</p>
         </div>
