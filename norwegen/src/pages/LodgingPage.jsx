@@ -51,7 +51,7 @@ export default function LodgingPage() {
               {l.note    && <p className="lodge-note">{l.note}</p>}
             </div>
             <div className="lodge-foot">
-              <span className="lodge-num">Nacht {String(i + 1).padStart(2, '0')}</span>
+              <span className="lodge-num">Tag {String(i).padStart(2, '0')}</span>
               {l.url && l.url !== '#'
                 ? <a className="lodge-link" href={l.url} target="_blank" rel="noopener noreferrer">Google Maps →</a>
                 : <span className="lodge-link" style={{ color: 'var(--c-slate)', cursor: 'default' }}>Website folgt</span>
