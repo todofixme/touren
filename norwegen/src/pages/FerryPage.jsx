@@ -59,8 +59,8 @@ export default function FerryPage() {
         <div className="ferry-hero-inner">
           <span className="eyebrow">{counts.ferry} Fähren · {counts.bus} Bus</span>
           <h1 className="h1">Fähren &amp;<br />Busverbindungen.</h1>
-          <p>Die Strecke quert immer wieder die Fjorde.
-             Abfahrts&shy;zeiten unbedingt vor Antritt prüfen.</p>
+          <p>Die Strecke quert immer wieder die Fjorde.<br />
+             Abfahrtszeiten unbedingt vor Antritt prüfen.</p>
         </div>
       </section>
 

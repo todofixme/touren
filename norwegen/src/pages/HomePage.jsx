@@ -82,7 +82,7 @@ export default function HomePage() {
           <Link className="ql-card aqua" to="/faehren">
             <div className="ql-num">04</div>
             <div className="ql-title">Fähren</div>
-            <p className="ql-desc">Alle Fjord-Querungen mit Abfahrts&shy;zeit und Link zum aktuellen Fahrplan.</p>
+            <p className="ql-desc">Alle Fjord-Querungen mit<br />Abfahrtszeit und Link zum<br />aktuellen Fahrplan.</p>
             <div className="ql-foot">Fahrpläne öffnen →</div>
           </Link>
         </div>
