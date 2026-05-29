@@ -20,8 +20,7 @@ export default function LodgingPage() {
         <div className="lodging-hero-inner">
           <span className="eyebrow">15 Nächte</span>
           <h1 className="h1">Hotels &amp;<br />Hütten.</h1>
-          <p>Vom Doppelzimmer am Fjord bis zur 6er-Hütte im Nirgendwo. Hotels sind
-             ozean&shy;blau, Camping&shy;hütten sonnen&shy;gelb markiert.</p>
+          <p>Vom Doppelzimmer am Fjord bis zur 6er-Hütte im Nirgendwo.<br />Und am besten schmeckt es, wenn wir selber kochen.</p>
           <div className="lodging-key">
             <span className="key-chip hotel"><i />{counts.hotel} × Hotel</span>
             <span className="key-chip cabin"><i />{counts.cabin} × Hütte</span>

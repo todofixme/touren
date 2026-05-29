@@ -76,7 +76,7 @@ export default function HomePage() {
             <span className="badge">15 Nächte</span>
             <div className="ql-num">03</div>
             <div className="ql-title">Unter&shy;künfte</div>
-            <p className="ql-desc">Hotels (ozeanblau) und Camping&shy;hütten (sonnen&shy;gelb) – mit Adresse und Notizen.</p>
+            <p className="ql-desc">Hotels, Hütten und Kochevents – mit Adressen und Notizen.</p>
             <div className="ql-foot">Alle Unterkünfte auf einem Blick →</div>
           </Link>
           <Link className="ql-card aqua" to="/faehren">
