@@ -29,10 +29,10 @@ export default function HomePage() {
           {heroLayout === 'stacked' && (
             <h1 className="hero-title">Trolle.<br />Tunnel.<br />Traum&shy;straßen.</h1>
           )}
-          <p className="hero-sub" style={{ color: 'rgb(255,255,255)' }}>
+          {/* <p className="hero-sub" style={{ color: 'rgb(255,255,255)' }}>
             In 13 Etappen von Stavanger nach Trondheim. Fjorde, Gletscher,
             Hoch&shy;ebenen – und Wasser&shy;fälle, die wirken, als kämen sie direkt aus den Wolken.
-          </p>
+          </p> */}
           <div className="hero-ctas">
             <a className="btn btn-accent" href={tour.links.roadbook}
                target="_blank" rel="noopener noreferrer">Roadbook PDF →</a>
