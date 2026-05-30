@@ -107,27 +107,29 @@ export default function TracksPage() {
 
       <section className="tracks-table-wrap" data-screen-label="Tracks: Tabelle">
         <h2 className="h1">Einzeletappen.</h2>
-        <table className="tracks-table">
-          <thead>
-            <tr>
-              <th>Etappe</th><th>Datum</th><th>Von → Nach</th>
-              <th>Highlight</th><th>Kurz</th><th>Lang</th><th>Fähre</th>
-            </tr>
-          </thead>
-          <tbody>
-            {stages.map((s) => (
-              <tr key={`${s.n}-${s.date}`} className={s.n === 'R' ? 'rest' : ''}>
-                <td><span className="n-cell">{s.n}</span></td>
-                <td className="date-cell">{s.date}</td>
-                <td>{s.from}{s.from !== s.to && <> → <b>{s.to}</b></>}</td>
-                <td>{s.highlight}</td>
-                <td className="km-cell">{s.n === 'R' ? '–' : s.short_track}</td>
-                <td className="hm-cell">{s.long_track || '–'}</td>
-                <td>{s.ferry && <span className="ferry-chip">Fähre</span>}</td>
+        <div className="table-scroll-wrap">
+          <table className="tracks-table">
+            <thead>
+              <tr>
+                <th>Etappe</th><th>Datum</th><th>Von → Nach</th>
+                <th>Highlight</th><th>Kurz</th><th>Lang</th><th>Fähre</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {stages.map((s) => (
+                <tr key={`${s.n}-${s.date}`} className={s.n === 'R' ? 'rest' : ''}>
+                  <td><span className="n-cell">{s.n}</span></td>
+                  <td className="date-cell">{s.date}</td>
+                  <td>{s.from}{s.from !== s.to && <> → <b>{s.to}</b></>}</td>
+                  <td>{s.highlight}</td>
+                  <td className="km-cell">{s.n === 'R' ? '–' : s.short_track}</td>
+                  <td className="hm-cell">{s.long_track || '–'}</td>
+                  <td>{s.ferry && <span className="ferry-chip">Fähre</span>}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </section>
     </main>
   );

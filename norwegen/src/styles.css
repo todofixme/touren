@@ -1,7 +1,7 @@
 @import "./colors_and_type.css";
 
 * { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; background: var(--bg-2); color: var(--fg-1); font-family: var(--font-body); }
+html, body { margin: 0; padding: 0; background: var(--bg-2); color: var(--fg-1); font-family: var(--font-body); overflow-x: hidden; }
 img { display: block; max-width: 100%; }
 button { font-family: inherit; cursor: pointer; }
 a { color: inherit; }
@@ -17,8 +17,8 @@ a { color: inherit; }
 [data-accent="yellow"]  { --accent: var(--c-sunburst-yellow); --accent-ink: var(--c-ink); }
 
 /* ---------- Header ------------------------------------------------------- */
-.app { min-height: 100vh; background: var(--bg-2); }
-.site-header { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 16px 48px; background: rgba(255,255,255,0.92); backdrop-filter: blur(8px); position: sticky; top: 0; z-index: 50; box-shadow: 0 1px 0 var(--line); }
+.app { min-height: 100vh; background: var(--bg-2); padding-top: 74px; }
+.site-header { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 16px 48px; background: rgba(255,255,255,0.92); backdrop-filter: blur(8px); position: fixed; top: 0; left: 0; right: 0; z-index: 50; box-shadow: 0 1px 0 var(--line); }
 .site-logo { display: flex; align-items: center; gap: 14px; text-decoration: none; color: inherit; }
 .site-logo img { height: 42px; width: auto; }
 .site-logo .crumb { font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 700; color: var(--c-slate); border-left: 1px solid var(--line-strong); padding-left: 14px; }
@@ -39,6 +39,9 @@ a { color: inherit; }
 
 .mobile-menu { display: none; }
 .mobile-menu-inner { display: flex; flex-direction: column; }
+
+/* ---------- Table scroll wrapper ---------------------------------------- */
+.table-scroll-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 
 /* ---------- Common ------------------------------------------------------- */
 .eyebrow { font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 700; color: var(--c-slate); }
@@ -366,6 +369,7 @@ a { color: inherit; }
   .tracks-table .ferry-chip { font-size: 0; gap: 0; }
 }
 @media (max-width: 720px) {
+  .app { padding-top: 64px; }
   .site-header { padding: 14px 20px; gap: 12px; }
   .site-logo img { height: 36px; }
   .hero { padding: 64px 24px 80px; min-height: 540px; }

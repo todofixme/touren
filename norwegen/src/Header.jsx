@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { Link, useRouterState } from '@tanstack/react-router';
 import { useData } from './DataContext';
 
@@ -54,30 +55,33 @@ export default function Header() {
         <span /><span /><span />
       </button>
 
-      <div id="mobile-menu"
-           className={`mobile-menu${open ? ' open' : ''}`}
-           role="dialog" aria-modal="true" aria-hidden={!open}
-           onClick={(e) => { if (e.target === e.currentTarget) setOpen(false); }}>
-        <div className="mobile-menu-inner" onClick={(e) => e.stopPropagation()}>
-          <span className="mobile-menu-label">Tour-Infos</span>
-          {NAV.map((n) => (
-            <Link key={n.path} to={n.path}
-                  className="mobile-link"
-                  activeProps={{ className: 'mobile-link active' }}
-                  activeOptions={n.path === '/' ? { exact: true } : {}}>
-              {n.label}
-            </Link>
-          ))}
-          <a className="mobile-cta" href={tour.links.roadbook}
-             target="_blank" rel="noopener noreferrer">
-            Roadbook PDF →
-          </a>
-          <div className="mobile-meta">
-            <span>{tour.dateRange}</span>
-            <span>{tour.startEnd}</span>
+      {createPortal(
+        <div id="mobile-menu"
+             className={`mobile-menu${open ? ' open' : ''}`}
+             role="dialog" aria-modal="true" aria-hidden={!open}
+             onClick={(e) => { if (e.target === e.currentTarget) setOpen(false); }}>
+          <div className="mobile-menu-inner" onClick={(e) => e.stopPropagation()}>
+            <span className="mobile-menu-label">Tour-Infos</span>
+            {NAV.map((n) => (
+              <Link key={n.path} to={n.path}
+                    className="mobile-link"
+                    activeProps={{ className: 'mobile-link active' }}
+                    activeOptions={n.path === '/' ? { exact: true } : {}}>
+                {n.label}
+              </Link>
+            ))}
+            <a className="mobile-cta" href={tour.links.roadbook}
+               target="_blank" rel="noopener noreferrer">
+              Roadbook PDF →
+            </a>
+            <div className="mobile-meta">
+              <span>{tour.dateRange}</span>
+              <span>{tour.startEnd}</span>
+            </div>
           </div>
-        </div>
-      </div>
+        </div>,
+        document.body
+      )}
     </header>
   );
 }
