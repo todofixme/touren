@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
+import type { Tweaks } from './types';
 import { Outlet } from '@tanstack/react-router';
 import { TweaksContext } from './TweaksContext';
 import {
@@ -10,13 +11,13 @@ import Footer from './Footer';
 /* ----------------------------------------------------------------------- */
 /* App (Root-Layout)                                                        */
 /* ----------------------------------------------------------------------- */
-const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+const TWEAK_DEFAULTS: Tweaks = /*EDITMODE-BEGIN*/{
   "accent": "#00698a",
   "topo": true,
   "heroLayout": "stacked"
 }/*EDITMODE-END*/;
 
-const ACCENT_KEY = {
+const ACCENT_KEY: Record<string, string> = {
   '#ffd222': 'yellow',
   '#64c2c8': 'aqua',
   '#00698a': 'ocean',
@@ -43,7 +44,7 @@ export default function App() {
               label="Brand-Akzent"
               value={tweaks.accent}
               options={['#00698a', '#64c2c8', '#ffd222', '#e83363']}
-              onChange={(v) => setTweak('accent', v)} />
+              onChange={(v) => setTweak('accent', Array.isArray(v) ? v[0] : v)} />
           </TweakSection>
           <TweakSection label="Hero-Layout">
             <TweakSelect

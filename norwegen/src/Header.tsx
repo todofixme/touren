@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { Link, useRouterState } from '@tanstack/react-router';
 import { useData } from './DataContext';
 
-const NAV = [
+const NAV: { path: string; label: string }[] = [
   { path: '/',             label: 'Übersicht'  },
   { path: '/tracks',       label: 'Strecken'   },
   { path: '/unterkuenfte', label: 'Unterkünfte'},
@@ -80,7 +80,7 @@ export default function Header() {
             </div>
           </div>
         </div>,
-        document.body
+        document.body!
       )}
     </header>
   );

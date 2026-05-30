@@ -1,13 +1,13 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider } from '@tanstack/react-router';
 import { DataContext } from './DataContext';
 import { router } from './router';
+import type { AppData, Tour, Stage, Lodging, Transit, TrackSource, Hint } from './types';
 import './styles.css';
 
-async function loadData() {
+async function loadData(): Promise<AppData> {
   const base = import.meta.env.BASE_URL;
-  const load = (path) =>
+  const load = (path: string): Promise<unknown> =>
     fetch(base + path).then((r) => {
       if (!r.ok) throw new Error(`${base}${path}: HTTP ${r.status}`);
       return r.json();
@@ -22,20 +22,27 @@ async function loadData() {
     load('hints.json'),
   ]);
 
-  return { tour, stages, lodging, transits, trackSources, hints };
+  return {
+    tour: tour as Tour,
+    stages: stages as Stage[],
+    lodging: lodging as Lodging[],
+    transits: transits as Transit[],
+    trackSources: trackSources as TrackSource[],
+    hints: hints as Hint[],
+  };
 }
 
 loadData()
   .then((data) => {
-    ReactDOM.createRoot(document.getElementById('root')).render(
+    ReactDOM.createRoot(document.getElementById('root')!).render(
       <DataContext.Provider value={data}>
         <RouterProvider router={router} />
       </DataContext.Provider>
     );
   })
-  .catch((err) => {
+  .catch((err: Error) => {
     console.error('[ERT] Fehler beim Laden der Daten:', err);
-    document.getElementById('root').innerHTML = `
+    document.getElementById('root')!.innerHTML = `
       <div style="padding:2rem;font-family:sans-serif;max-width:540px;margin:4rem auto">
         <h2 style="color:#e83363;font-size:1.2rem">Fehler beim Laden der Tour-Daten</h2>
         <p style="color:#555">${err.message}</p>

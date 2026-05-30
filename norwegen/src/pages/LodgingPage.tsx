@@ -1,9 +1,10 @@
-import React, { useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import { useData } from '../DataContext';
+import type { LodgingType } from '../types';
 
 export default function LodgingPage() {
   const { lodging } = useData();
-  const [filter, setFilter] = useState('all');
+  const [filter, setFilter] = useState<'all' | LodgingType>('all');
 
   const filtered = useMemo(
     () => filter === 'all' ? lodging : lodging.filter((l) => l.type === filter),

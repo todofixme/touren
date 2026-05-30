@@ -1,16 +1,11 @@
-import React from 'react';
 import { Link } from '@tanstack/react-router';
 import { useData } from '../DataContext';
 import { useTweaksCtx } from '../TweaksContext';
 
-function nbspUnits(s) {
-  if (!s) return s;
-  return s.replace(/(\d)\s+(km|Hm)\b/g, '$1 $2');
-}
-
 export default function HomePage() {
   const { tour, stages } = useData();
-  const { heroLayout } = useTweaksCtx();
+  const tweaks = useTweaksCtx();
+  const heroLayout = tweaks?.heroLayout ?? 'stacked';
 
   return (
     <main>

@@ -1,10 +1,11 @@
-import React, { useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import { useData } from '../DataContext';
-import { Ship, BusFront } from "lucide-react";
+import { Ship, BusFront } from 'lucide-react';
+import type { Transit, TransitKind, TrackVariant } from '../types';
 
-function TransitRow({ t }) {
-  const schedules = Array.isArray(t.schedule) ? t.schedule : t.schedule ? [t.schedule] : [];
-  const tracks = t.tracks || [];
+function TransitRow({ t }: { t: Transit }) {
+  const schedules = t.schedule;
+  const tracks = t.tracks;
   return (
     <div className={`transit-row ${t.kind}`}>
       <div className="t-kind" title={t.kind === 'ferry' ? 'Fähre' : 'Bus'}>
@@ -19,12 +20,12 @@ function TransitRow({ t }) {
         ))}
       </div>
       <div className="t-times">
-        {(t.times || []).map((ts) => (
+        {t.times.map((ts) => (
           <span key={ts} className="t-time-chip">{ts}</span>
         ))}
       </div>
       <div className="t-route">{t.route}</div>
-      <div className="t-dur"><nobr>Fahrzeit: {t.duration || '–'}</nobr> </div>
+      <div className="t-dur"><span style={{ whiteSpace: 'nowrap' }}>Fahrzeit: {t.duration || '–'}</span> </div>
       <div className="t-links">
         {schedules.map((url, i) => (
           <a key={url} href={url} target="_blank" rel="noopener noreferrer">
@@ -38,19 +39,19 @@ function TransitRow({ t }) {
 
 export default function FerryPage() {
   const { transits } = useData();
-  const [filter, setFilter] = useState('all');
+  const [filter, setFilter] = useState<'all' | TransitKind | TrackVariant>('all');
 
   const filtered = useMemo(() => {
     if (filter === 'all')  return transits;
     if (filter === 'bus')  return transits.filter((t) => t.kind === 'bus');
-    return transits.filter((t) => (t.tracks || []).includes(filter));
+    return transits.filter((t) => t.tracks.includes(filter as TrackVariant));
   }, [filter, transits]);
 
   const counts = useMemo(() => ({
     ferry: transits.filter((t) => t.kind === 'ferry').length,
     bus:   transits.filter((t) => t.kind === 'bus').length,
-    short: transits.filter((t) => (t.tracks || []).includes('short')).length,
-    long:  transits.filter((t) => (t.tracks || []).includes('long')).length,
+    short: transits.filter((t) => t.tracks.includes('short')).length,
+    long:  transits.filter((t) => t.tracks.includes('long')).length,
   }), [transits]);
 
   return (
