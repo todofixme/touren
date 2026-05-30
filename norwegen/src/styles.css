@@ -337,7 +337,7 @@ a { color: inherit; }
   .mobile-meta { margin-top: auto; padding-top: 32px; display: flex; flex-direction: column; gap: 4px; font-family: var(--font-mono); font-size: 12px; color: rgba(255,255,255,0.5); letter-spacing: 0.04em; }
   .site-header { z-index: 70; }
   .burger { z-index: 71; }
-  .menu-open .burger span { background: #fff; }
+
   .ql-grid { grid-template-columns: repeat(2, 1fr); }
   .hints-grid { grid-template-columns: repeat(2, 1fr); }
   .lodging-grid { grid-template-columns: repeat(2, 1fr); }
