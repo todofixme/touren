@@ -54,8 +54,12 @@ export default function TracksPage() {
                Streckenpunkteliste angezeigt (siehe Screenshot).</p>
           </div>
           <figure className="howto-screenshot">
-            <img src="assets/screenshot_garmin.png" alt="Garmin-Anzeige mit Wegpunkten" />
-            <figcaption>Streckenpunkte-Anzeige auf einem Garmin Edge.</figcaption>
+            <img src="assets/screenshot_garmin_1050.png" alt="Garmin-Anzeige mit Wegpunkten" />
+            <figcaption>
+              Streckenpunkte-Anzeige auf einem Garmin Edge.
+              <br />
+              Fähren beginnen mit "F", Busse mit "B".
+            </figcaption>
           </figure>
           <div className="howto-block howto-upload">
             <h3>Upload auf dein Navigationsgerät</h3>
