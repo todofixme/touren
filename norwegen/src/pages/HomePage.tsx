@@ -1,34 +1,19 @@
 import { Link } from '@tanstack/react-router';
 import { useData } from '../DataContext';
-import { useTweaksCtx } from '../TweaksContext';
 
 export default function HomePage() {
   const { tour, stages } = useData();
-  const tweaks = useTweaksCtx();
-  const heroLayout = tweaks?.heroLayout ?? 'stacked';
 
   return (
     <main>
-      <section className={`hero hero-${heroLayout}`} data-screen-label="Home: Hero">
+      <section className="hero hero-stacked" data-screen-label="Home: Hero">
         <div className="hero-bg" />
         <div className="hero-overlay" />
         <div className="hero-content">
           <span className="eyebrow" style={{ color: 'rgb(255,210,34)' }}>
             {tour.dateRange} · {tour.startEnd}
           </span>
-          {heroLayout === 'wordmark' && (
-            <h1 className="hero-title">Norwegen<br />2026.</h1>
-          )}
-          {heroLayout === 'route' && (
-            <h1 className="hero-title">
-              <span className="place">Stavanger</span>
-              <span className="arrow">– 1.400 km, 20.000 hm –</span>
-              <span className="place">Trondheim.</span>
-            </h1>
-          )}
-          {heroLayout === 'stacked' && (
-            <h1 className="hero-title">Trolle.<br />Tunnel.<br />Traum&shy;straßen.</h1>
-          )}
+          <h1 className="hero-title">Trolle.<br />Tunnel.<br />Traum&shy;straßen.</h1>
           {/* <p className="hero-sub" style={{ color: 'rgb(255,255,255)' }}>
             In 13 Etappen von Stavanger nach Trondheim. Fjorde, Gletscher,
             Hoch&shy;ebenen – und Wasser&shy;fälle, die wirken, als kämen sie direkt aus den Wolken.

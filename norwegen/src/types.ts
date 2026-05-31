@@ -90,12 +90,3 @@ export interface AppData {
   trackSources: TrackSource[];
   hints: Hint[];
 }
-
-// ── Tweaks ────────────────────────────────────────────────────────────────────
-export type HeroLayout = 'stacked' | 'wordmark' | 'route';
-
-export interface Tweaks {
-  accent: string;
-  topo: boolean;
-  heroLayout: HeroLayout;
-}
